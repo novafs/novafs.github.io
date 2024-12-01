@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/357c0f173f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="img/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Beginner Programmer</p>
+          <h1>Hi, I'm Nova <span>Fajri</span></h1>
+          <p>
+            <span>Informatics Engineering | University of Surabaya</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/20240201_104314.JPG" alt="Nova Fajri" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi there! I'm an enthusiastic and dedicated software developer with a passion for crafting efficient and scalable applications. With a strong foundation in C++, Java, and JavaScript, and still learning for other language. I
+              thrive on tackling challenging problems and turning innovative ideas into reality. My journey in the tech world has been fueled by continuous learning and a commitment to adopting best practices. I take pride in writing clean,
+              maintainable code and enjoy collaborating with cross-functional teams to deliver impactful solutions. When I'm not coding, you can find me exploring the latest tech trends, contributing to open-source projects, or indulging in
+              a good book.
+            </p>
+            <br />
+            <p>
+              Beyond my technical skills, I value the importance of a growth mindset and fostering a positive team culture. I believe in the power of technology to drive change and improve lives, and I'm always eager to take on new
+              challenges that push the boundaries of what's possible. Whether it's developing robust APIs, optimizing performance, or designing intuitive user interfaces, I approach each project with enthusiasm and attention to detail.
+              Let's connect and create something amazing together!
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX Design</span><br />Designing any types of website</li>
+                <li><span>Backend Developer</span><br />Build some code with C++ or Java</li>
+                <li><span>Code Debugging</span><br />Solved any Codes Problem</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023 - Current</span><br />Informatics Studying at University of Surabaya</li>
+                <!-- <li><span>2021 - 2023</span><br />Games Modding and Debugging</li> -->
+                <li><span>2019 - 2021</span><br />Online Store Managing</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2023</span><br />Informatics Engineering Student at University of Surabaya</li>
+                <li><span>2023</span><br />Graduated from Senior High School 1 Jombang</li>
+                <li><span>2020</span><br />Graduated from Junior High School 2 Jombang</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of About -->
+
+    <!-- Services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-file-code"></i>
+            <h2>Not Found</h2>
+            <p>Not available right now.</p>
+            <a href="">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Not Found</h2>
+            <p>Not available right now.</p>
+            <a href="">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-bug-slash"></i>
+            <h2>Not Found</h2>
+            <p>Not available right now.</p>
+            <a href="">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Services -->
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="img/laptopweb.jpg" alt="Website Building" />
+            <div class="layer">
+              <h3>Website Building</h3>
+              <p>Not available right now.</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/laptop.jpg" alt="Software/Apps Building" />
+            <div class="layer">
+              <h3>Program/Apps Building</h3>
+              <p>Not available right now.</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/prog.jpg" alt="Debugging" />
+            <div class="layer">
+              <h3>UI/UX Design</h3>
+              <p>Not available right now.</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- End of Portfolio -->
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <a href="mailto:novafajri20@gmail.com">
+              <p><i class="fa-solid fa-paper-plane"></i>novafajri20@gmail.com</p>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=6289685416998">
+              <p><i class="fa-solid fa-phone"></i>+6289685416998</p>
+            </a>
+            <div class="social-icons">
+              <a href="https://facebook.com/novafajris" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://instagram.com/novafajri245" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+              <a href="https://id.linkedin.com/novafajri" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <!-- <a href="img/IT Trainer Curriculum Vitae.pdf" download class="btn btn2">Download CV</a> -->
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="email" name="Email" placeholder="Email Address" required />
+              <textarea name="Message" rows="6" placeholder="Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Nova Fajri. Made with <i class="fa-regular fa-heart"></i> by Nova Fajri</p>
+      </div>
+    </div>
+    <!-- End of Contact -->
+
+    <!-- Javascript -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbw3w_vk2CT57JaYQZsq0mmjh7a4n1CFitniDtpBVvs4SrXE-FmTtilTYcHUMKUKjJ6isQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent succesfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
